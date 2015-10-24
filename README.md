@@ -8,6 +8,11 @@ Create deck of memos to build your vocabolary and keep track of new concepts lea
 * cordova
 * gulp (maybe)
 
+## To install ionic and cordova
+```
+sudo npm -g install cordova ionic
+```
+
 ##Execution
 Run the following commands:
 ```
