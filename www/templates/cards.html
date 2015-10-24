@@ -1,0 +1,19 @@
+<ion-view view-title="Playlists">
+  <ion-content id='deck'>
+    <!-- <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list> -->
+		{{card_on_focus}}
+	<div class="card" style="background: linear-gradient(45deg, {{card.color}} 0%, {{card.color}} 80%, white 140%)"  ng-repeat="card in cards" ng-click="focus_card($index)">
+	  <div class="card-header item item-divider">
+	    {{card.keyword}}
+	  </div>
+	  <div class="card-body item item-text-wrap" ng-show="card_is_on_focus($index)">
+		  {{card.description}}
+		  <!-- <img class="card_image" src="{{card.image}}"/> -->
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>
