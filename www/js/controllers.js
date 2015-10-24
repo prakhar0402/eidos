@@ -42,8 +42,8 @@ angular.module('starter.controllers', [])
 })
 
 .controller('CardsCtrl', function($scope, $http) {
-	var APIURL = ''
-	$http.get(APIURL+'api/cards')
+	var APIURL = 'http://45.79.65.134:3500/'
+	$http.get(APIURL+'api/dictionary/cards')
 	.then(function successCallback(response) {
 		$scope.cards = response.data
 	}, function errorCallback(response) {
