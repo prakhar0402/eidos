@@ -42,13 +42,23 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+  $scope.cards = [
+	  { keyword: 'Unicorn',
+	  	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		image: "http://myths.e2bn.org/library/1402159986/unicorn1402159862.jpg",
+		color:'blue',
+	  },
+	  { keyword: 'City',
+	  	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		image: "http://foto.hrsstatic.com/fotos/0/3/256/256/80/000000/http%3A%2F%2Ffoto-origin.hrsstatic.com%2Ffoto%2F1%2F0%2F9%2F1%2F109110%2F109110_bc_5512982.jpg/rx2iqbXutGkCoKu9qFQdNw%3D%3D/621,416/6/The_Westin_St_Francis_San_Francisco_on_Union_Square-San_Francisco-Buisnesscenter-1-109110.jpg",
+		color:'red',
+	  },
+	  { keyword: 'Reggae',
+	  	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+		image: "http://i676.photobucket.com/albums/vv127/huguin_ska/espalda_negra.jpg",
+		color:'green',
+	  },
+
   ];
 })
 

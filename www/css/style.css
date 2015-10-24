@@ -1,1 +1,6 @@
 /* Empty. Add your own CSS if you like */
+.card_image{
+/*	width: 200px;*/
+	max-width: 100%;
+	height: 200px;
+}
