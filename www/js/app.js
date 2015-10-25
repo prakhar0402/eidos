@@ -57,9 +57,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           controller: 'CardsCtrl'
         }
       }
-    })
+    });
 
-  .state('app.single', {
+  /*.state('app.single', {
     url: '/playlists/:playlistId',
     views: {
       'menuContent': {
@@ -67,7 +67,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
-  });
+  });*/
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/cards');
 });
