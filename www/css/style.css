@@ -35,6 +35,9 @@
 	padding-bottom:30px;
 	  transition: all 0.1s linear;
 }
+.card-body p{
+	font-size:1.2em;
+}
 
 
 .card-header{
@@ -45,6 +48,12 @@
 	font-size: 1.8em;
 	color: white;
 	font-weight: 200;
+}
+
+.card-header img{
+	float:right;
+	margin-top:-5px;
+	margin-bottom:-10px;
 }
 
 #deck{
