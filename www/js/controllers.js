@@ -104,15 +104,14 @@ angular.module('starter.controllers', [])
 		
 	$scope.showConfirm = function(element) {
 	   var confirmPopup = $ionicPopup.confirm({
-	     title: 'Consume Ice Cream',
-	     template: 'Are you sure you want to eat this ice cream?'
+	     title: 'Remove Card',
+	     template: 'Are you sure you want remove this card?'
 	   });
 	   confirmPopup.then(function(res) {
 	     if(res) {
 			 element.is_deleted=true;
-	       console.log('You are sure');
 	     } else {
-	       console.log('You are not sure');
+
 	     }
 	   });
 	 };
