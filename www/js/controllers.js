@@ -110,6 +110,7 @@ angular.module('starter.controllers', [])
 	   confirmPopup.then(function(res) {
 	     if(res) {
 			 element.is_deleted=true;
+			 $http.delete(APIURL + 'api/dictionary/'+element.keyword);
 	     } else {
 
 	     }
