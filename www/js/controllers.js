@@ -41,7 +41,7 @@ angular.module('starter.controllers', [])
     };
   })
 
-  .controller('CardsCtrl', function ($scope, $http) {
+  .controller('CardsCtrl', function ($scope, $http, $ionicPopup) {
     var APIURL = 'http://45.79.65.134:3500/';
 
     var getListUpdate = function(){
@@ -101,6 +101,22 @@ angular.module('starter.controllers', [])
           $scope.$broadcast('scroll.refreshComplete');
         });;
     }
+		
+	$scope.showConfirm = function(element) {
+	   var confirmPopup = $ionicPopup.confirm({
+	     title: 'Consume Ice Cream',
+	     template: 'Are you sure you want to eat this ice cream?'
+	   });
+	   confirmPopup.then(function(res) {
+	     if(res) {
+			 element.is_deleted=true;
+	       console.log('You are sure');
+	     } else {
+	       console.log('You are not sure');
+	     }
+	   });
+	 };
+	
 
   });
 
