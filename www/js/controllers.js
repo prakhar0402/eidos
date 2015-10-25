@@ -45,7 +45,7 @@ angular.module('starter.controllers', [])
     var APIURL = 'http://45.79.65.134:3500/';
 
     var getListUpdate = function(){
-      $http.get(APIURL + 'api/dictionary/cards')
+      return $http.get(APIURL + 'api/dictionary/cards')
         .then(function successCallback(response) {
           $scope.cards = response.data
         }, function errorCallback(response) {
@@ -95,7 +95,11 @@ angular.module('starter.controllers', [])
     };
 
     $scope.reloadList = function(){
-        getListUpdate();
+        getListUpdate()
+        .finally(function() {
+          // Stop the ion-refresher from spinning
+          $scope.$broadcast('scroll.refreshComplete');
+        });;
     }
 
   });

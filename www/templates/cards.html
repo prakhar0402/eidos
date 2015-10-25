@@ -1,9 +1,10 @@
 <ion-view view-title="TheVocabClub">
   <ion-content id='deck'>
-    <button ng-click="reloadList()" type="button" class="btn btn-info">
-      <i class="fa fa-refresh"></i>&nbsp;Reload data
-    </button>
-
+	<ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="reloadList()">
+    </ion-refresher>
+	<br/><br/>
     <!-- <ion-list>
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
         {{playlist.title}}
