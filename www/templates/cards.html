@@ -10,18 +10,17 @@
         {{playlist.title}}
       </ion-item>
     </ion-list> -->
-	<div class="card" style="background: linear-gradient(45deg, {{card.color}} 0%, {{card.color}} 80%, white 140%)"  ng-repeat="card in cards" ng-click="focus_card($index)">
-	  <div class="card-header item item-divider">
+	<div class="card memo" style="background: linear-gradient(45deg, {{card.color}} 0%, {{card.color}} 80%, white 140%)"  ng-repeat="card in cards" ng-click="focus_card($index)">
+	  <div class="memo-header item item-divider">
 	    {{card.keyword}} <a href="http://www.target.com/s?searchTerm={{card.keyword}}" target="_blank">
 		<img src="./img/target.png" width="25" height="33" alt="Target" ng-show="card_is_on_focus($index)"/></a>
 
 	  </div>
-	  <div class="card-body item item-text-wrap" ng-show="card_is_on_focus($index)">
+	  <div class="memo-body item item-text-wrap" ng-show="card_is_on_focus($index)">
 		  <p>
 			  {{card.description}}
 		</p>
-		  <!-- <img class="card_image" src="{{card.image}}"/> -->
-		  
+
 	  </div>
 	</div>
   </ion-content>
